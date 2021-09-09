@@ -67,7 +67,7 @@ class SamsungRemote {
     this.eventEmitter.on(TvEvents.ERROR, listener)
   }
 
-  OnDisconnected(listener) {
+  onDisconnected(listener) {
     this.eventEmitter.on(TvEvents.DISCONNECTED, listener)
   }
 
@@ -88,4 +88,4 @@ class SamsungRemote {
   }
 }
 
-module.exports = SamsungRemote
+export default SamsungRemote

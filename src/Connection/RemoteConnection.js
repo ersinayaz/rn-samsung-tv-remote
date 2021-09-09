@@ -59,7 +59,6 @@ messages.on(data => data.startsWith('5::/com.samsung.companion:'), message => {
     // todo: probably pairing failed, request pairing here
     console.log('handleEvent : unable to decrypt data', error)
     eventEmitter.emit(TvEvents.REPAIR, "unable to decrypt data");
-    socket.close()
   }
 })
 
