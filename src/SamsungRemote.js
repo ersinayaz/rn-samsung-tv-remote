@@ -25,10 +25,9 @@ class SamsungRemote {
   }
 
   async fetchDeviceInfo() {
-    const resp = await fetch(`http://${this.config.ip}:8001/ms/1.0/`)
-    const device = await resp.json()
-    const deviceInfo = { id: device.DeviceID, name: device.DeviceName, model: device.ModelName }
-    return deviceInfo
+    const resp = await fetch(`http://${this.config.ip}:8001/api/v2/`)
+    const data = await resp.json()
+    return { id: data.device.id, name: data.device.name, model: data.device.modelName }
   }
 
   async requestPin() {
