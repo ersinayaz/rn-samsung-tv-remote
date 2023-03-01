@@ -1,6 +1,7 @@
 # All Keys
 | Key                               |
 | --------------------------------- |
+| KEY_ENTER
 | KEY_MENU
 | KEY_UP
 | KEY_DOWN
