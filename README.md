@@ -102,6 +102,7 @@ The list of accepted keys may vary depending on the TV model, but the following 
 
 | KEY         | Description   |
 |-------------|:-------------:|
+| KEY_ENTER   | Enter / OK    |
 | KEY_POWER   | Power Off     |
 | KEY_MENU    | Menu          |
 | KEY_CONTENTS| Smart Hub     |
